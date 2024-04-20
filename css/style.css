@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-fundo-cabecalho: #191F53;
+    --cor-texto-cabecalho: #ffffff;
+    --background-servicos: #D0EEFF;
+    --background-planos: #220058;
+
+    --fonte-texto:  "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    height: 100vh;
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-cabecalho);
+}
+
+.link_cabecalho{
+    text-decoration: none;
+    color: var(--cor-texto-cabecalho);
+    text-transform: uppercase;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+
+
+.cabecalho_icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.links_inicial{
+    display: flex;
+   align-items: center;
+}
+
+
+
+
+#primeiro{
+    margin-right: 0.7em;
+}
+
+.sessao1{
+    background-image: url(/img/tecnologia-disruptiva-do-gradiente-roxo-do-fundo-do-circulo-do-assistente-virtual.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70%;
+}
+
+.container_vazio{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 41.75em;
+}
+.container{
+    background: linear-gradient(#0B275E, #D2DEF4);
+    width: 600px;
+    height: 329px;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container_lado{
+    width: 6em;
+    height: 20.55em;
+    background-color: var(--cor-fundo-cabecalho);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.textos{
+    margin-left: 2em;
+    color: var(--cor-texto-cabecalho);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+}
+
+.textos_titulo{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.paragrafo{
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sessao2{
+    margin-top: 20em;
+    
+}
+
+.titulo{
+    text-align: center;
+}
+
+.sessao2_subtitulo{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.sessao2_container{
+    padding: 5em;
+    background-color: var(--background-servicos);
+    margin-top: 5em;
+    
+}
+
+.sessao2_servicos{
+   display: flex;
+   justify-content: space-around;
+   align-items: first baseline;
+}
+
+.sessao2_servicos1, .sessao2_servicos2 , .sessao2_servicos3{
+    
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicos_titulo{
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.paragrafo_servico{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sessao3{
+    margin-top: 5em;
+}
+
+.sessao3_planos{
+    background-color: var(--background-planos);
+    padding: 5em;
+    margin-top: 5em;
+   
+    
+}
+
+.planos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.div_textos{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+}
+
+.textos_planos{
+    display: flex;
+
+}
+
+.paragrafos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.p1 , .p2 , .p3{
+    color: var(--cor-texto-cabecalho);
+    text-align: center;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.preco_menor, .preco_medio, .preco_maior{
+    font-weight: bold;
+    
+}
+
+.preco{
+   display: flex;
+   justify-content: center;
+}
+
+.div_planos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.mensal{
+    background: linear-gradient(#ffffff , #d2d2d2 , #828282);
+    
+}
+
+.basico{
+    background: linear-gradient(#ffffff , #aab1f7 , #0017e7);
+    
+}
+
+.premium{
+    background: linear-gradient(#fffdfb , #ffd6b0 , #ff7a00);
+}
+
+.mensal , .basico , .premium{
+    border-radius: 19px;
+    width: 25%;
+    padding: 4em;
+}
+
+.titulo_plano{
+    margin-bottom: 1em;
+}
+
+.titulo_conforto{
+    text-align: center;
+}
+
+.sessao4{
+    margin-top: 5em;
+}
+
+.div_conforto{
+    background-color: #20486C;
+    margin-top: 5em;
+}
+
+.div_conforto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagens{
+    display: flex;
+}
+
+.celular{
+    margin-right: 1em;
+    padding: 5em;
+}
+
+.texto_conforto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.paragrafo_conforto{
+    color: var(--cor-texto-cabecalho);
+    font-weight: 500;
+    font-size: 40px;
+    width: 42%;
+}
