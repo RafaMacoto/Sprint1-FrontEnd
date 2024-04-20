@@ -5,6 +5,7 @@
     --cor-texto-cabecalho: #ffffff;
     --background-servicos: #D0EEFF;
     --background-planos: #220058;
+    --background-footer: #000;
 
     --fonte-texto:  "Inter", sans-serif;
 }
@@ -282,4 +283,22 @@ body{
     font-size: 40px;
     width: 42%;
     
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-footer);
+    min-height: 120px;
+   
+}
+
+.rodape a{
+    display: block;
+    margin-left: 2em;
+}
+
+.rodape h4{
+    color: var(--cor-texto-cabecalho);
 }
