@@ -4,6 +4,7 @@
     --background-cabecalho:#191F53;
     --cor-texto-cabecalho: #fff;
     --cor-cadastrarse: #000;
+    --cor-fundo: #fbffff;
 
     --fonte-texto:  "Inter", sans-serif;
 }
@@ -17,27 +18,29 @@
 body{
     min-height: 100vh;
     font-family: var(--fonte-texto);
+    height: 100vh;
+    background-color: var(--cor-fundo);
 }
 
 .cabecalho{
     background-color: var(--background-cabecalho);
+    width: 100%;
 }
 
 .link_cabecalho{
     text-decoration: none;
     color: var(--cor-texto-cabecalho);
     text-transform: uppercase;
+    padding: 1em;
+    margin-right: 3em;
 }
 .links{
     display: flex;
     align-items: center;
-    width: 30%;
-    justify-content: space-around;
-    margin-right: 1em;
+    width: 100%;
+    justify-content: end;
+    
 }
-
-
-
 
 .cabecalho_icones {
     display: flex;
@@ -58,5 +61,76 @@ body{
 }
 
 .principal{
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    min-height: 80%;
+    align-items: center;
+}
+
+
+
+.principal_textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.principal_textos h1{
+    margin-bottom: 1em;
+    width: 50%;
+    text-align: center;
+}
+
+.principal_textos p{
+    font-weight: 500;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.principal_inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+label{
+    width: 50%;
+    margin-bottom: 0.3em;
+}
+
+.inputs{
+    width: 50%;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1.6em;
+}
+
+.submit_botao{
+    width: 50%;
+    text-transform: uppercase;
+    background-color: var(--background-cabecalho);
+    color: var(--cor-texto-cabecalho);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    height: 3em;
+}
+
+.principal_inputs a{
+    background-color: var(--background-cabecalho);
+    color: var(--cor-texto-cabecalho);
+    text-decoration: none;
+    width: 50%;
+    padding: 0.8em;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 3em;
 }
