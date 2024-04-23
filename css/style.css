@@ -6,6 +6,7 @@
     --background-servicos: #D0EEFF;
     --background-planos: #220058;
     --background-footer: #000;
+    --background-page:#fbffff;
 
     --fonte-texto:  "Inter", sans-serif;
 }
@@ -19,6 +20,7 @@
 body{
     font-family: var(--fonte-texto);
     height: 100vh;
+    background-color: var(--background-page);
 }
 
 .cabecalho{
