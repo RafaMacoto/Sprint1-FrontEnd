@@ -1,0 +1,144 @@
+:root{
+    --cor-texto-cabecalho: #ffffff;
+    --background-planos: #220058;
+    --background-page:#fbffff;
+    --cor-fundo-cabecalho: #191F53;
+
+    --fonte-texto:  "Inter", sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    height: 100vh;
+    background-color: var(--background-page);
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-cabecalho);
+}
+
+.link_cabecalho{
+    text-decoration: none;
+    color: var(--cor-texto-cabecalho);
+    padding-left: 8em;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 13%;
+    justify-content: space-between;
+}
+
+.cabecalho_icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.links_inicial{
+    display: flex;
+   align-items: center;
+}
+
+.textos_inicial{
+    text-align: center;
+    margin: 4em auto;
+}
+
+.textos_inicial h1{
+    font-size: 40px;
+}
+
+.textos_inicial p{
+    width: 30%;
+    margin: 1em auto;
+    font-size: 24px;
+}
+
+
+.sessao3_planos{
+    padding: 5em;
+    margin-top: 5em;
+   
+    
+}
+
+.planos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.div_textos{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+}
+
+.textos_planos{
+    display: flex;
+
+}
+
+.paragrafos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.p1 , .p2 , .p3{
+    text-align: center;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.preco_menor, .preco_medio, .preco_maior{
+    font-weight: bold;
+    
+}
+
+.preco{
+   display: flex;
+   justify-content: center;
+}
+
+.div_planos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.mensal{
+    background: linear-gradient(#ffffff , #d2d2d2 , #828282);
+    
+}
+
+.basico{
+    background: linear-gradient(#ffffff , #aab1f7 , #0017e7);
+    
+}
+
+.premium{
+    background: linear-gradient(#fffdfb , #ffd6b0 , #ff7a00);
+}
+
+.mensal , .basico , .premium{
+    border-radius: 19px;
+    width: 25%;
+    padding: 4em;
+}
+
+.titulo_plano{
+    margin-bottom: 1em;
+}
