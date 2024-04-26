@@ -33,6 +33,11 @@ body{
     margin-right: 1em;
 }
 
+h1{
+    color: var(--cor-texto-cabecalho);
+    padding-left: 2em;
+}
+
 .links{
     display: flex;
     justify-content: end;
