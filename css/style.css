@@ -200,18 +200,25 @@ body{
  }
 
  .basico , .mensal , .premium{
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
     border-radius: 19px;
     padding: 3em;
+
  }
+
+.textosplanos{
+    height: 20%;
+    margin-left: 1em;
+} 
 
  .pplanos , .preco{
     color: var(--cor-texto-cabecalho);
     font-size: 12px;
     margin-top: 1em;
-    width: 70%;
-    align-self: center;
+    width: 80%;
+
+    
  }
 
  .preco3{
@@ -360,12 +367,29 @@ body{
 
     .div_planos{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        
     }
 
     .mensal , .basico , .premium{
-       padding: 2.5em;
-       min-width: 30%;
+       padding: 2em;
+       min-height: 60%;
+       min-width: 95%;
+    }
+
+    .textosplanos{
+        min-width: 100%;
+        margin: 0;
+        
+    }
+
+    .pplanos{
+        min-width: 80%;
+    }
+
+    .descricao_plano{
+        margin-bottom: 0.2em;
+        font-size: 14px;
     }
 
     .div_conforto{
@@ -478,19 +502,13 @@ body{
         font-size: 14px;
      }
 
-     .sessao3_planos{
+     /* .sessao3_planos{
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 2em;
-     }
+     } */
 
-     .comtexto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        height: 100%;
-     }
+     
 
      .basico , .mensal , .premium{
         width: 80%;
@@ -500,23 +518,52 @@ body{
      .pplanos , .preco{
         color: var(--cor-texto-cabecalho);
         font-size: 12px;
-        margin-top: 1em;
-        width: 70%;
-        align-self: center;
+        margin-top: 2em;
+        width: 90%;
+        
      }
 
      .preco3{
         width: 90%;
+        margin-top: 1.8em;
      }
-
     
+}
 
-     
+@media screen and (max-width: 590px){
+
+.container{
+        padding: 0.5em;
+    }
+
+.container h1{
+    font-size: 20px;
+    font-weight: 400;
+    align-self: flex-end;
+}
+
+.container p{
+    font-size: 14px;
+}
+
+.sessao3_planos{
+    display: flex;
+    flex-direction: column;
+}
+
+.basico , .mensal , .premium{
+   min-width: 90%;
+   height: 10em;
+}
+
+.comtexto{
+    text-align: center;
+}
+
+.preco{
+    margin-bottom: 1em;
+    text-align: center;
+}
 
 
-
-    
-
-    
-    
 }
