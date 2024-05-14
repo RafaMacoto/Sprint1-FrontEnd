@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-fundo-cabecalho: #191F53;
+    --cor-texto-cabecalho: #ffffff;
+    --background-servicos: #D0EEFF;
+    --background-planos: #220058;
+    --background-footer: #000;
+    --background-page:#fbffff;
+
+    --fonte-texto:  "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    height: 100vh;
+    background-color: var(--background-page);
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-cabecalho);
+}
+
+.link_cabecalho{
+    text-decoration: none;
+    color: var(--cor-texto-cabecalho);
+    text-transform: uppercase;
+    margin-right: 2em;
+}
+.links{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    
+}
+
+.cabecalho_icones {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em; */
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.links_inicial{
+    display: flex;
+   align-items: center;
+   margin-left: 1em;
+}
+
+
+
+
+#primeiro{
+    margin-right: 0.7em;
+}
+
+.sessao1{
+    background-image: url(/img/tecnologia-disruptiva-do-gradiente-roxo-do-fundo-do-circulo-do-assistente-virtual.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70%;
+}
+
+.container_vazio{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: linear-gradient(#0B275E, #D2DEF4);
+    min-width: 35%;
+    max-width: 50%;
+    height: 329px;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container_lado{
+    width: 6em;
+    height: 20.55em;
+    background-color: var(--cor-fundo-cabecalho);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.textos{
+    margin-left: 2em;
+    color: var(--cor-texto-cabecalho);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+    min-height: 90%;
+    max-width: 60%;
+}
+
+.icone_intellidrive{
+    max-width: 40%;
+}
+
+.imagem{
+    min-width: 100%;
+}
+
+.textos_titulo{
+    font-size: 30px;
+    font-weight: 400;
+   
+}
+
+.paragrafo{
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sessao2{
+    margin-top: 20em;
+    
+}
+
+.titulo{
+    text-align: center;
+}
+
+.sessao2_subtitulo{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.primeiro_sub{
+    margin-top: 12em;
+}
+
+.sessao2_container{
+    padding: 5em;
+    background-color: var(--background-servicos);
+    margin-top: 5em;
+    
+}
+
+.sessao2_servicos{
+   display: flex;
+   justify-content: space-around;
+   align-items: first baseline;
+}
+
+.sessao2_servicos1, .sessao2_servicos2 , .sessao2_servicos3{
+    
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicos_titulo{
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.paragrafo_servico{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sessao3{
+    margin-top: 5em;
+}
+
+.sessao3_planos{
+    background-color: var(--background-planos);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 4em;
+    margin-top: 3em;
+
+}
+
+.comtexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+ }
+
+ .basico , .mensal , .premium{
+    width: 80%;
+    height: 80%;
+    border-radius: 19px;
+    padding: 3em;
+ }
+
+ .pplanos , .preco{
+    color: var(--cor-texto-cabecalho);
+    font-size: 12px;
+    margin-top: 1em;
+    width: 70%;
+    align-self: center;
+ }
+
+ .preco3{
+    width: 90%;
+ }
+
+
+.mensal{
+    background: linear-gradient(#ffffff , #d2d2d2 , #828282);
+    
+}
+
+.basico{
+    background: linear-gradient(#ffffff , #aab1f7 , #0017e7);
+    
+}
+
+.premium{
+    background: linear-gradient(#fffdfb , #ffd6b0 , #ff7a00);
+}
+
+
+.titulo_plano{
+    margin-bottom: 1em;
+}
+
+.titulo_conforto{
+    text-align: center;
+}
+
+.sessao4{
+    margin-top: 5em;
+}
+
+.div_conforto{
+    background-color: #20486C;
+    margin-top: 5em;
+}
+
+.div_conforto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagens{
+    display: flex;
+}
+
+.celular{
+    margin-right: 1em;
+    padding: 5em;
+}
+
+.texto_conforto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+.paragrafo_conforto{
+    color: var(--cor-texto-cabecalho);
+    font-weight: 500;
+    font-size: 40px;
+    width: 70%;
+    
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-footer);
+    min-height: 120px;
+   
+}
+
+.rodape a{
+    display: block;
+    margin-left: 2em;
+}
+
+.rodape h4{
+    color: var(--cor-texto-cabecalho);
+}
+
+
+@media screen and (max-width: 1199px){
+    .container{
+        width: 50%;
+    }
+
+    .mensal , .basico , .premium{
+        padding: 3em;
+        min-width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px){
+
+
+    .container{
+        padding: 1em;
+        min-width: 50%;
+    }
+
+    .imagem{
+       min-width: 30%;
+    }
+
+    .icone_intellidrive{
+        max-width: 40%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .textos{
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .textos p{
+        font-size: 16px;
+    }
+
+    .textos h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sessao2_subtitulo{
+        width: 60%;
+    }
+
+
+    .div_planos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mensal , .basico , .premium{
+       padding: 2.5em;
+       min-width: 30%;
+    }
+
+    .div_conforto{
+       display: grid;
+       grid-template-columns: 50% 50%;
+       padding: 2em;
+    }
+
+    .imagens{
+        display: flex;
+    }
+
+    .texto_conforto{
+        width: 90%;
+    }
+
+    .paragrafo_conforto{
+       min-width: 80%;
+    }
+
+     .celular{
+        padding: 0;
+        width: 80%;
+    }
+
+    .pc{
+        width: 80%;
+    }
+
+    .imagens{
+        width: 50%;
+    } 
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 2em;
+        min-width: 60%;
+    }
+
+    .imagem{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .icone_intellidrive{
+        min-width: 100%;
+    }
+
+    .textos{
+        min-height: 30%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .textos_titulo{
+        width: 100%;
+        margin: 0 0 0 1em;
+        font-size: 18px;
+    }
+
+    .paragrafo{
+        width: 100%;
+        margin: 1em 0 0 1em;
+        font-size: 15px;
+    }
+
+    .sessao2_subtitulo{
+        margin-top: 4em;
+    }
+
+    .servicos_titulo{
+        font-size: 18px;
+    }
+    .paragrafo_servico{
+        font-size: 15px;
+    }
+
+    .sessao2_servicos1, .sessao2_servicos2 , .sessao2_servicos3{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sessao2_container{
+        padding: 1em;
+    }
+
+    .sessao2_servicos{
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+     }
+
+     .sessao2_subtitulo{
+        width: 80%;
+        font-size: 32px;
+        font-weight: 500;
+     }
+
+     .titulo_plano{
+        font-size: 16px;
+     }
+
+     .descricao_plano{
+        font-size: 14px;
+     }
+
+     .sessao3_planos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 2em;
+     }
+
+     .comtexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+     }
+
+     .basico , .mensal , .premium{
+        width: 80%;
+        height: 20%;
+     }
+
+     .pplanos , .preco{
+        color: var(--cor-texto-cabecalho);
+        font-size: 12px;
+        margin-top: 1em;
+        width: 70%;
+        align-self: center;
+     }
+
+     .preco3{
+        width: 90%;
+     }
+
+    
+
+     
+
+
+
+    
+
+    
+    
+}

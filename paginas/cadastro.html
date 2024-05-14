@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Login e Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_icones">
+            <div class="links_inicial">
+                <a href="https://www.portoseguro.com.br/"><img src="/img/image 1.svg" alt="Símbolo da empresa"></a>
+            </div>
+            <div class="links">
+             <a href="https://www.portoseguro.com.br/institucional/sobre-a-porto-seguro" class="link_cabecalho">Sobre nós</a>
+             <a href="login.html" class="link_cabecalho">Fazer login</a>
+             <a href="#" class="link_cabecalho fundo">Cadastrar-se</a>
+            </div>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="div_principal">
+            <div class="principal_textos">
+                <h1 class="principal_titulo">DriveGenius</h1>
+                <p class="principal_paragrafo">Venha resolver o problema do seu automóvel da melhor maneira! O DriveGenius chegou para facilitar sua vida.</p>
+            </div>
+                <form action="../index.html" method="get" class="principal_inputs">               
+                        <label for="nome_cadastro">Nome</label>
+                        <input type="text" name="nome" id="nome_cadastro" placeholder="Nome completo" autofocus required class="inputs">
+                        <label for="email_cadastro">Email</label>
+                        <input type="email" name="email" id="email_cadastro" placeholder="me@porto.com" required class="inputs">
+                        <label for="telefone_cadastro">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone_cadastro" placeholder="(00) 00000-0000" required class="inputs">
+                        <label for="senha_cadastro">Senha</label>
+                        <input type="password" name="senha" id="senha_cadastro" placeholder="Senha" required class="inputs">
+                        <input type="submit" value="Crie sua conta" class="submit_botao">
+                        <a href="login.html">Login</a> 
+                
+                </form>
+            </div>
+       
+    </main>
+    
+</body>
+</html>
