@@ -18,7 +18,6 @@
 body{
     min-height: 100vh;
     font-family: var(--fonte-texto);
-    height: 100vh;
     background-color: var(--cor-fundo);
 }
 
@@ -133,4 +132,10 @@ label{
     text-align: center;
     text-transform: uppercase;
     height: 3em;
+}
+
+@media screen and (max-width: 657px){
+    .sobre{
+        display: none;
+    }
 }
