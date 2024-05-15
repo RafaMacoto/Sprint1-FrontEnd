@@ -23,6 +23,7 @@ body{
 
 .cabecalho{
     background-color: var(--cor-fundo-cabecalho);
+    width: 100vw;
 }
 
 .link_cabecalho{
@@ -33,8 +34,8 @@ body{
 .links{
     display: flex;
     align-items: center;
-    width: 13%;
-    justify-content: space-between;
+    width: 30%;
+    justify-content: end;
 }
 
 .cabecalho_icones {
@@ -54,7 +55,11 @@ body{
     margin: 4em auto;
 }
 
-.textos_inicial h1{
+.textos_inicial p{
+    min-width: 90%;
+}
+
+h1{
     font-size: 40px;
 }
 
@@ -66,58 +71,51 @@ body{
 
 
 .sessao3_planos{
-    padding: 5em;
-    margin-top: 5em;
-   
-    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 4em;
+    margin-top: 3em;
+
 }
 
-.planos{
+.comtexto{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.div_textos{
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-}
+    align-items:center;
+    height: 100%;
+ }
 
-.textos_planos{
-    display: flex;
+ .basico , .mensal , .premium{
+    width: 90%;
+    height: 70%;
+    border-radius: 19px;
+    padding: 3em;
 
-}
+ }
 
-.paragrafos{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
+.textosplanos{
+    height: 20%;
+    margin-left: 1em;
+} 
 
-.p1 , .p2 , .p3{
-    text-align: center;
-    width: 30%;
+ .pplanos , .preco{
+    color: black;
+    font-size: 12px;
     margin-top: 1em;
-}
+    width: 80%;
 
-.preco_menor, .preco_medio, .preco_maior{
-    font-weight: bold;
     
-}
+ }
 
-.preco{
-   display: flex;
-   justify-content: center;
-}
+ .preco3{
+    width: 90%;
+ }
 
-.div_planos{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1em;
-    width: 100%;
-}
+ .preco{
+    font-weight: bold;
+ }
+
 
 .mensal{
     background: linear-gradient(#ffffff , #d2d2d2 , #828282);
@@ -133,12 +131,19 @@ body{
     background: linear-gradient(#fffdfb , #ffd6b0 , #ff7a00);
 }
 
-.mensal , .basico , .premium{
-    border-radius: 19px;
-    width: 25%;
-    padding: 4em;
-}
 
 .titulo_plano{
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 700px){
+    .sessao3_planos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preco{
+        margin-bottom: 1em;
+        text-align: center;
+    }
 }
