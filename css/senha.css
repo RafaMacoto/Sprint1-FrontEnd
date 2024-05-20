@@ -24,7 +24,7 @@ body{
 
 .cabecalho{
     background-color: var(--background-cabecalho);
-    width: 100%;
+    min-width: 100vw;
 }
 
 .link_cabecalho{
@@ -144,11 +144,12 @@ label{
     height: 3em;
 }
 
-.link_senha{
-    width: 50%;
-    margin-top: 0.5em;
-}
+@media screen and (max-width: 660px){
+    .sobre{
+        display: none;
+    }
 
-.link_senha:active{
-    color: var(--cor-cadastrarse);
-}  
+    .submit_botao{
+        font-size: 12px;
+    }
+}
