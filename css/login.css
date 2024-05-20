@@ -18,7 +18,6 @@
 body{
     min-height: 100vh;
     font-family: var(--fonte-texto);
-    height: 100vh;
     background-color: var(--cor-fundo);
 }
 
@@ -151,4 +150,24 @@ label{
 
 .link_senha:active{
     color: var(--cor-cadastrarse);
+}
+
+@media screen and (max-width: 662px){
+    .sobre{
+        display: none;
+    }
+
+    .fundo{
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .link_cabecalho{
+        margin: 0;
+    }
+
+    .cabecalho{
+        min-width: 100vw;
+    }
 }
