@@ -182,11 +182,7 @@ main{
     color: var(--cor-texto-cabecalho);
 }
 
-.scriptconversa{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
+
 
 
 @media screen and (max-width: 640px){
